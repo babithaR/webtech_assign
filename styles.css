@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.activity {
+    background-color:antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none; 
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.activity h2 {
+    color: #007acc;
+}
+
+
+
+@media (max-width: 768px) {
+    .activity {
+        width: 90%; 
+    }
+}
